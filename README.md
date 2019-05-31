@@ -1,0 +1,1 @@
+This is the repository I use to learn TypeScript and push code with some examples. 
