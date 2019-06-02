@@ -1,9 +1,22 @@
 let myStr: string
-let myNum: number
-let myBool: boolean
+myStr = 'Hello' + ' ' + 'World'
 
-myStr = 'Hello World'
-myNum = 33
+let myNum: number
+myNum = 3 + 3
+
+let myBool: boolean
 myBool = false
 
-console.log(myNum)
+let myVar: any
+myVar = 1
+
+let numArr: number[]
+numArr = [1, 2, 3]
+
+let strArr: Array<string> 
+// let strArr: string[]
+strArr = ['Hello', 'World']
+
+let myVoid: void = undefined
+let myNull: null = null
+let myUndefined: undefined = undefined
