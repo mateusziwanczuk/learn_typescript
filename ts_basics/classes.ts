@@ -1,4 +1,10 @@
-class User {
+interface UserInterface {
+    name: string;
+    mail: string;
+    age: number;
+}
+
+class User implements UserInterface {
     name: string;
     mail: string;
     age: number
