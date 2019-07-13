@@ -1,6 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './components/types';
+import './components/functions';
+import './components/generics';
 
 const App: React.FC = () => {
   return (
