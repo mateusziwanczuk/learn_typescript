@@ -2,7 +2,8 @@ import {
     add, 
     addWithInterface, 
     createUser, 
-    checkValue 
+    checkValue, 
+    fetchUser
     } from '../components/functions'
 
 describe('testing functions results', () => {
@@ -30,9 +31,21 @@ describe('testing functions results', () => {
     test('Should be falsy', () => {
         expect(checkValue(null)).toBeFalsy()
     })
+
+    test('email should contain @', () => {
+        expect('address@email.com').toMatch(/@/);
+    })
+
+    test('Admin should be in users', () => {
+        let users = ['john', 'matthew', 'admin', 'alex']
+        expect(users).toContain('admin')
+    })
+
+    test('User fetched name should by Leanne Graham'), () => {
+        expect.assertions(1);
+        return fetchUser()
+            .then(data => expect(data.name)
+            .toEqual('Leanne Graham'))
+    }
     
 })
-
-
-// .toBeNull()
-// .toBeFalsy()

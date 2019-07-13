@@ -1,3 +1,5 @@
+import axios from 'axios'
+
 export const add = (x:number, y:number):number => {
     return x + y;
 }
@@ -18,3 +20,10 @@ export const createUser = (userName: string, userAge: number) => {
 }
 
 export const checkValue = (x: any) => x
+
+export const fetchUser = () => {
+    axios
+        .get('https://jsonplaceholder.typicode.com/users/1')
+        .then(res => res.data)
+        .catch(err => console.log(err))
+}
